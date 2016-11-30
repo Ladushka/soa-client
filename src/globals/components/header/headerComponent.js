@@ -6,7 +6,7 @@
         .component('headerComponent', {
             templateUrl: 'src/globals/components/header/header.html',
             controller: function () {
-                console.log("work");
+                //console.log("work");
             }
         });
 })();

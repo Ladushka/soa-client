@@ -1,34 +1,30 @@
 [
   {
     "number":123456,
-    "surname":"surname1",
-    "name":"name1",
-    "patronymic":"patronymic1",
-    "sex":"М",
-    "room":null
+    "surname":"Каторец",
+    "name":"Алексей",
+    "patronymic":"Фёдорович",
+    "rating":7
   },
   {
     "number":123456,
-    "surname":"surname2",
-    "name":"name2",
-    "patronymic":"patronymic2",
-    "sex":"Ж",
-    "room":7
+    "surname":"Андриянов",
+    "name":"Дмитрий",
+    "patronymic":"Анатольевич",
+    "rating":10
   },
   {
     "number":123456,
-    "surname":"surname3",
-    "name":"name3",
-    "patronymic":"patronymic3",
-    "sex":"Ж",
-    "room":null
+    "surname":"Сивцова",
+    "name":"Елена",
+    "patronymic":"Николаевна",
+    "rating":9
   },
   {
     "number":123456,
-    "surname":"surname3",
-    "name":"name3",
-    "patronymic":"patronymic3",
-    "sex":"М",
-    "room":2
+    "surname":"Зайцев",
+    "name":"Александр",
+    "patronymic":"Александрович",
+    "rating":7
   }
 ]

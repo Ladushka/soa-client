@@ -1,0 +1,38 @@
+[
+  {
+    "number": 123456,
+    "surname": "Каторец",
+    "name": "Алексей",
+    "patronymic": "Фёдорович",
+    "sex": "M",
+    "room": null,
+    "hostel": null
+  },
+  {
+    "number": 123456,
+    "surname": "Андриянов",
+    "name": "Дмитрий",
+    "patronymic": "Анатольевич",
+    "sex": "M",
+    "room": null,
+    "hostel": null
+  },
+  {
+    "number": 123456,
+    "surname": "Сивцова",
+    "name": "Елена",
+    "patronymic": "Николаевна",
+    "sex": "Ж",
+    "room": 7,
+    "hostel": 3
+  },
+  {
+    "number": 123456,
+    "surname": "Зайцев",
+    "name": "Александр",
+    "patronymic": "Александрович",
+    "sex": "M",
+    "room": 9,
+    "hostel": 2
+  }
+]

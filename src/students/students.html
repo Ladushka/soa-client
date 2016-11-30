@@ -1,0 +1,23 @@
+<pre class="stud-table3">Student Id</pre>
+<pre class="stud-table">Student</pre>
+<pre class="stud-table2">Sex</pre>
+<pre class="stud-table3">Hostel</pre>
+<pre class="stud-table3">Room</pre>
+
+</div>
+<div ng-repeat="student in students">
+    <pre class="stud-table3">{{student.number}} </pre>
+    <pre class="stud-table">{{student.surname}} {{student.name}} {{student.patronymic}}</pre>
+    <pre class="stud-table2">{{student.sex}} </pre>
+    <div class="col-host">
+        <input class="form-control" ng-model="student.hostel" disabled/>
+    </div>
+    <div class="col-host2">
+        <input class="form-control" ng-model="student.room" disabled/>
+    </div>
+    <div class="col-host3">
+        <button class="btn btn-default stud-table4 " ng-click="test(student)"><span class="glyphicon glyphicon-pencil"></span>
+        </button>
+        <button class="btn btn-default stud-table4 "><span class="glyphicon glyphicon-floppy-save"></span></button>
+    </div>
+</div>

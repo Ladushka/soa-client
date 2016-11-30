@@ -5,8 +5,8 @@
 
         .service('informationService', function ($http) {
             return {
-                getStudents:function () {
-                   return $http.get('src/json/students.json');
+                getStudents: function () {
+                    return $http.get('src/json/students.json');
                 },
                 gridOptions: function () {
                     return {
@@ -21,7 +21,8 @@
                             enableHorizontalScrollbar: 0,
                             enableVerticalScrollbar: 2,
                             columnDefs: [
-                                { name:'name' }
+                                {name: 'name'},
+                                {name: "rating"}
                             ]
                         }
                     };
