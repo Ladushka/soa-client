@@ -10,10 +10,10 @@
     <pre class="stud-table">{{student.surname}} {{student.name}} {{student.patronymic}}</pre>
     <pre class="stud-table2">{{student.sex}} </pre>
     <div class="col-host">
-        <input class="form-control" ng-model="student.hostel" disabled/>
+        <input name="{{student.number}}" class="form-control" ng-model="student.hostel" disabled/>
     </div>
     <div class="col-host2">
-        <input class="form-control" ng-model="student.room" disabled/>
+        <input name="{{student.number}}" class="form-control" ng-model="student.room" disabled/>
     </div>
     <div class="col-host3">
         <button class="btn btn-default stud-table4 " ng-click="test(student)"><span class="glyphicon glyphicon-pencil"></span>

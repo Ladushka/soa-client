@@ -10,7 +10,12 @@
                 console.log(response.data);
             });
             $scope.test=function (student) {
-                console.log(student);
+                document.getElementsByName(student.number);
+                $scope.el=document.getElementsByName(student.number);
+                ($scope.el).forEach(function (item) {
+                   item.disabled=false;
+                });
+
             };
         });
 
