@@ -1,0 +1,34 @@
+[
+  {
+    "number":123456,
+    "surname":"surname1",
+    "name":"name1",
+    "patronymic":"patronymic1",
+    "sex":"М",
+    "room":null
+  },
+  {
+    "number":123456,
+    "surname":"surname2",
+    "name":"name2",
+    "patronymic":"patronymic2",
+    "sex":"Ж",
+    "room":7
+  },
+  {
+    "number":123456,
+    "surname":"surname3",
+    "name":"name3",
+    "patronymic":"patronymic3",
+    "sex":"Ж",
+    "room":null
+  },
+  {
+    "number":123456,
+    "surname":"surname3",
+    "name":"name3",
+    "patronymic":"patronymic3",
+    "sex":"М",
+    "room":2
+  }
+]

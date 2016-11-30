@@ -1,0 +1,111 @@
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.grid {
+  position: absolute;
+  width: 30%;
+  /*height: 100%;*/
+  top: 10%;
+  left: 70%;
+}
+
+.printSelection {
+  width: 600px;
+  margin-top: 10px;
+}
+
+.full button span {
+  background-color: limegreen;
+  border-radius: 32px;
+  color: black;
+}
+
+.partially button span {
+  background-color: orange;
+  border-radius: 32px;
+  color: black;
+}
+
+.typeahead-demo .custom-popup-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  background-color: #f9f9f9;
+}
+
+.typeahead-demo .custom-popup-wrapper > .message {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  color: #868686;
+}
+
+.typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+  position: static;
+  float: none;
+  display: block;
+  min-width: 160px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+header {
+  width: 100%;
+  top:90%;
+  height: 15%;
+}
+
+.title {
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.block {
+  padding: 15px;
+}
+
+progress {
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+.component{
+  align-content: center;
+  width: 10%;
+}
+form.tab-form-demo .tab-pane {
+  margin: 20px 20px;
+}
+
+.curs{
+  cursor: pointer;
+}
+
+#modal-content{
+  width: 500px;
+}
