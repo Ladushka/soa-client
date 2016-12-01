@@ -11,7 +11,7 @@
             });
 
             $scope.table_value=function (student) {
-                console.log(student.room)
+
                 document.getElementsByName(student.number);
                 $scope.el=document.getElementsByName(student.number);
                 ($scope.el).forEach(function (item) {
@@ -25,6 +25,13 @@
                 });
                 console.log($scope.hostels);
             });
+            $scope.save=function (student) {
+                console.log($scope.el);
+                ($scope.el).forEach(function (item) {
+                    item.disabled=true;
+                });
+                //studentsService.postStudent(student);
+            };
         });
 
 })();

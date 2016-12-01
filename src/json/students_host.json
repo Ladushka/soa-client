@@ -23,7 +23,7 @@
     "name": "Елена",
     "patronymic": "Константиновна",
     "sex": "Ж",
-    "room": 7,
+    "room": 1,
     "hostel": 3
   },
   {
@@ -32,7 +32,7 @@
     "name": "Александр",
     "patronymic": "Александрович",
     "sex": "M",
-    "room": 9,
+    "room": 1,
     "hostel": 2
   }
 ]

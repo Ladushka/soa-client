@@ -10,6 +10,9 @@
                 },
                 getHostels:function () {
                     return $http.get('src/json/hostels.json');
+                },
+                postStudent:function (student) {
+                    return $http.post('src/json/hostels.json',student);
                 }
             };
         });
