@@ -1,0 +1,22 @@
+[
+  {
+    "hostel_id": 1,
+    "address": "address1",
+    "room_count":20   
+  },
+    {
+    "hostel_id": 2,
+    "address": "address2",
+    "room_count":34   
+  },
+    {
+    "hostel_id": 3,
+    "address": "address2",
+    "room_count":12   
+  },
+    {
+    "hostel_id": 4,
+    "address": "address2",
+    "room_count":33   
+  }
+]

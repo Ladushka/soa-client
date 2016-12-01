@@ -11,8 +11,8 @@
                 });
             $routeProvider.when('/hostels',
                 {
-                    templateUrl: 'src/hostels/hostels.html'//,
-                    // controller: 'companiesController'
+                    templateUrl: 'src/hostels/hostels.html',
+                    controller: 'hostelsController'
                 });
         });
 
