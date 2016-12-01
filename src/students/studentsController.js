@@ -7,11 +7,9 @@
 
             studentsService.getStudents().then(function (response) {
                 $scope.students=response.data;
-                console.log(response.data);
             });
 
             $scope.table_value=function (student) {
-
                 document.getElementsByName(student.number);
                 $scope.el=document.getElementsByName(student.number);
                 ($scope.el).forEach(function (item) {
@@ -23,14 +21,12 @@
                 $scope.hostels=(response.data).map(function (item) {
                     return item.hostel_id;
                 });
-                console.log($scope.hostels);
             });
             $scope.save=function (student) {
-                console.log($scope.el);
                 ($scope.el).forEach(function (item) {
                     item.disabled=true;
                 });
-                //studentsService.postStudent(student);
+                //studentsService.postStudent(student,student.number);
             };
         });
 
