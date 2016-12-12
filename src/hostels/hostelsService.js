@@ -10,6 +10,9 @@
                 },
                 getRooms:function (id) {
                     return $http.get('src/json/students_host.json');
+                },
+                postHostel: function (hostel) {
+                    return $http.post(way + ':8080/api/rooms', hostel);
                 }
             };
         });

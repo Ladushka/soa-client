@@ -1,0 +1,20 @@
+<div class="modal-header">
+
+</div>
+<div class="modal-body" id="modal-body">
+    <!--Form-->
+    <form name="editForm" novalidate class="simple-form">
+        <!--Id-->
+        № комнаты:
+        <input name="form" type="number" class="form-control" ng-model="room.number" /><br/>
+        <!--Name-->
+        Количество мест:
+        : <input name="form" type="text" class="form-control" ng-model="room.places" required/>
+
+
+    </form>
+</div>
+<div class="modal-footer">
+    <input type="submit" class="btn btn-primary" ng-click="$close(room)" value="Submit"
+           ng-disabled="editForm.$invalid"/>
+</div>

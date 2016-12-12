@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('app')
-        .controller('roomsController', function ($scope, $http, roomsService) {
+        .controller('roomsController', function ($scope, $http, $uibModal,$routeParams,roomsService) {
 
 
             roomsService.getRooms(1).then(function (response) {
@@ -22,8 +22,22 @@
                 });
             };
 
-            // $scope.addRoom=function () {
-            //
-            // }
+            $scope.addRoom=function () {
+                var modalInstance = $uibModal.open({
+                    animation: $scope.animationsEnabled,
+                    templateUrl: 'src/hostels/addRoom.html',
+                    size: 'sm',
+                    scope: $scope
+                });
+                modalInstance.result.then(function (room) {
+                    $scope.save(room);
+                });
+            };
+
+            $scope.save=function(room){
+                room.room_id=0;
+                room.hostel_is=$routeParams.roomID;
+                roomsService.postRoom(room);
+            };
         });
 })();

@@ -14,7 +14,7 @@
                     templateUrl: 'src/hostels/hostels.html',
                     controller: 'hostelsController'
                 });
-            $routeProvider.when('/rooms/:roomID',
+            $routeProvider.when('/hostels/:roomID',
                 {
                     templateUrl: 'src/rooms/rooms.html',
                     controller: 'roomsController'
