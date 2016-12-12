@@ -15,13 +15,17 @@
     </div>
     <div class="col-host2">
         <select name="{{student.number}}" class="form-control" ng-model="student.room"
-                ng-options="hostel for hostel in hostels" disabled></select>
+                ng-options="room for room in student.rooms" disabled></select>
     </div>
     <div class="col-host3">
         <button class="btn btn-default stud-table4 " ng-click="table_value(student)"><span
                 class="glyphicon glyphicon-pencil"></span>
         </button>
         <button class="btn btn-default stud-table4 " ng-click="save(student)"><span
-                class="glyphicon glyphicon-floppy-save"></span></button>
+                class="glyphicon glyphicon-floppy-save"></span>
+        </button>
+        <button class="btn btn-default stud-table4 " ng-click="delete(student)"><span
+                class="glyphicon glyphicon-remove"></span>
+        </button>
     </div>
 </div>

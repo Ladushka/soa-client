@@ -14,6 +14,11 @@
                     templateUrl: 'src/hostels/hostels.html',
                     controller: 'hostelsController'
                 });
+            $routeProvider.when('/rooms/:roomID',
+                {
+                    templateUrl: 'src/rooms/rooms.html',
+                    controller: 'roomsController'
+                });
         });
 
 })();

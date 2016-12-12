@@ -1,0 +1,20 @@
+[
+  {
+    "room_id":1,
+    "number":111,
+    "places":3,
+    "hostel_id":1
+  },
+  {
+    "room_id":2,
+    "number":2,
+    "places":3,
+    "hostel_id":3
+  },
+  {
+    "room_id":3,
+    "number":3,
+    "places":3,
+    "hostel_id":3
+  }
+]
