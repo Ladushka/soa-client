@@ -7,8 +7,8 @@
             var url='http://192.168.39.52';
             return {
                 getStudents: function () {
-                    //return $http.get('src/json/students_host.json');
-                    return $http.get(url+':50890/students');
+                    return $http.get('src/json/students_host.json');
+                    //return $http.get(url+':50890/students');
                 },
                 getHostels:function () {
                     return $http.get('src/json/hostels.json');

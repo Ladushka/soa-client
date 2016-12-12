@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-dsfdfs
-</body>
-</html>
+<div class="sizeCom">
+<div class="row" >
+    <div class="col-sm-6 col-md-4" ng-repeat="room in rooms.rooms">
+        <div class="thumbnail">
+
+            <div class="caption">
+                <h3>комната № {{room.number}}</h3>
+                <p>студенты:</p>
+                <li ng-repeat="student in room.students">
+                    <b>{{student.name}} {{student.surname}}</b>
+                </li>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<footer>
+    <button type="button" class="btn btn-info" ng-click="addRoom()">Add Slide</button>
+</footer>

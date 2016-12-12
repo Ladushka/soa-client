@@ -1,0 +1,26 @@
+[
+  {
+    "room":{
+      "room_id":1,
+      "number":111,
+      "places":3,
+      "hostel_id":1
+    },
+    "students":[
+      {
+        "number":333333,
+        "surname":"Сивцова",
+        "name":"Елена",
+        "patronymic":"Николаевна",
+        "rating":9
+      },
+      {
+        "number":444444,
+        "surname":"Зайцев",
+        "name":"Александр",
+        "patronymic":"Александрович",
+        "rating":7
+      }
+    ]
+  }
+]
