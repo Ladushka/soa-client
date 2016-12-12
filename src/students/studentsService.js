@@ -4,14 +4,15 @@
     angular.module('app')
 
         .service('studentsService', function ($http) {
-            var url='http://192.168.39.52';
+            var url = 'http://localhost:50890';
             return {
                 getStudents: function () {
                     return $http.get('src/json/students_host.json');
-                    //return $http.get(url+':50890/students');
+                    //return $http.get(url+'/api/students');
                 },
                 getHostels:function () {
                     return $http.get('src/json/hostels.json');
+                    //return $http.get(url + '/api/hostels');
                 },
                 getRooms:function (id) {
                     if(id=333333) {
@@ -21,6 +22,7 @@
                     }
                 },
                 deleteStudents: function (id) {
+                    //return $http.delete(url + '/api/students/' + id);
                     return $http.delete('src/json/students_host.json');
                 },
                 postStudent:function (student,id) {
