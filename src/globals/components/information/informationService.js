@@ -4,9 +4,13 @@
     angular.module('app')
 
         .service('informationService', function ($http) {
+            var url='http://localhost:50890';
             return {
                 getStudents: function () {
-                    return $http.get('src/json/students.json');
+                    return $http.get(url+'/api/students/avg');
+                },
+                getAllStudents: function () {
+                    return $http.get(url+'/api/students');
                 },
                 gridOptions: function () {
                     return {

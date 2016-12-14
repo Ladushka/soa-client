@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('app')
-        .controller('hostelsController',function ($scope,$http,studentsService,hostelsService) {
+        .controller('hostelsController',function ($scope,$http,$uibModal,studentsService,hostelsService) {
 
             studentsService.getHostels().then(function (response) {
                 $scope.hostels=response.data;
@@ -17,7 +17,7 @@
             $scope.addHostel=function () {
                 var modalInstance = $uibModal.open({
                     animation: $scope.animationsEnabled,
-                    templateUrl: 'src/hostels/addRoom.html',
+                    templateUrl: 'src/hostels/addHostel.html',
                     size: 'sm',
                     scope: $scope
                 });
@@ -28,7 +28,8 @@
 
             $scope.save=function(hostel){
                 hostel.hostel_id=0;
-                roomsService.postRoom(hostel);
+                hostelsService.postHostel(hostel);
+                location.reload();
             };
 
 
